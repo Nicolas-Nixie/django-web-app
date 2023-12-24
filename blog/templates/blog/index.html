@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>My Django App</title>
+    </head>
+    <body>
+        <h1>My Django App</h1>
+        <p>My first Django app is working!</p>
+        <p>Hell {{ prenom }}, how are you</p>
+        <p>J'ai oublié de vous dire que j'ai : {{age}}, quand même !</p>
+        <p>D'autre part suis-je vieux ou pas : ?</p>
+        <p>Réponse : {%if age > 30%}
+            {{age}} ans, c'est vieux !
+            {%else%}
+            {{age}} ans, c'est jeune !
+            {%endif%}
+        </p>
+        <p>My watches are : {% for montre in montres %}
+            <li>{{ montre }}</li>
+            {% endfor %}
+        </p>
+    </body>
+</html>
